@@ -21,6 +21,7 @@ string[] ModArray(string[] arr)
     }
 }
     string[] new_arr = new string[k];
+{    
     k = 0;
     for (int i = 0; i < arr.Length; i++)  // заполнение нового массива
     {
@@ -33,3 +34,11 @@ string[] ModArray(string[] arr)
 
     return ;
 }
+
+string[] array = new string[8]
+{"Привет", "Dell", "как", "дела", "7", "Вот", "ТАК", "-55"};
+Console.Write("Исходный массив: ");
+PrintArray(array);
+string[] arrayNew = ModArray(array);
+Console.Write("Новый массив, из элементов исходного, длинной не более 3х символов: ");
+PrintArray(arrayNew);
